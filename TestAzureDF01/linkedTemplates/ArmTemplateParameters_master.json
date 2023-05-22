@@ -1,0 +1,39 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "TestAzureDF01"
+		},
+		"LS_ADLSTestConnection_accountKey": {
+			"value": ""
+		},
+		"LS_BlobTestConnection_connectionString": {
+			"value": ""
+		},
+		"AzureSqlDatabase1_properties_typeProperties_connectionString_secretName": {
+			"value": "SQLConnectionString"
+		},
+		"LS_ADLSConnection_properties_typeProperties_url": {
+			"value": "https://adfl2adslgen2.dfs.core.windows.net/"
+		},
+		"LS_ADLSTestConnection_properties_typeProperties_url": {
+			"value": "https://adfl2adslgen2.dfs.core.windows.net/"
+		},
+		"LS_BlobConnection_properties_typeProperties_connectionString_secretName": {
+			"value": "AccessKeyBlob"
+		},
+		"LS_Http_Github_properties_typeProperties_url": {
+			"value": "@{linkedService().BaseURL}"
+		},
+		"LS_KeyVault_properties_typeProperties_baseUrl": {
+			"value": "https://adfkeyvaulttest01.vault.azure.net/"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
